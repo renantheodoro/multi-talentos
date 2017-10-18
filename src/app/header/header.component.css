@@ -1,0 +1,199 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 999999;
+}
+
+header #item-shopping {
+  display: none;
+}
+
+header.user-on #item-shopping {
+  display: flex;
+}
+
+header .action-perfil {
+  display: none;
+}
+
+header.user-on .action-perfil,
+header.faculdade-on .action-perfil {
+  display: block;
+}
+
+header.user-on .btns,
+header.faculdade-on .btns {
+  display: none;
+}
+
+header .user-img {
+  display: none;
+}
+
+header.user-on .user-img {
+  display: block;
+}
+
+header .user-link {
+  display: none;
+}
+
+header.user-on .user-link {
+  display: block;
+}
+
+header .faculdade-img {
+  display: none;
+}
+header.faculdade-on .faculdade-img {
+  display: block;
+}
+
+
+header .faculdade-link {
+  display: none;
+}
+header.faculdade-on .faculdade-link {
+  display: block;
+}
+
+header .navegacao {
+  background-color: rgba(53, 193, 208, 0.9)
+}
+
+header .info-user {
+  cursor: pointer;
+  position: relative;
+}
+
+header .box-logout {
+  position: absolute;
+  width: 100px;
+  top: 60px;
+  padding-top: 20px;
+  right: 20px;
+  transition: all 1s;
+  display: none;
+  color: #FFF;
+  font-size: 18px;
+}
+
+header .box-logout li {
+  background-color: rgba(53, 193, 208, 0.9);
+  border: 1px solid rgba(255,255,255,.4)
+}
+
+header .box-logout a {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  justify-content: space-between;
+}
+
+header .box-logout a:hover {
+  background-color: #179f9e;
+  color: #fff;
+}
+
+header .info-user:hover .box-logout {
+  display: block;
+}
+
+#startMenu {
+  display: none;
+}
+
+/* MEDIA SCREENS */
+
+@media (max-width: 991px) {
+  #startMenu {
+    font-size: 30px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+    display: block;
+  }
+  #header-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+    display: none;
+    z-index: 1;
+  }
+  header .menu {
+    position: fixed;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    background-color: rgba(19, 147, 132, 0.9);
+    right: -280px;
+    transition: all .5s;
+    z-index: 2;
+  }
+  header .menu.active {
+    right: 0;
+  }
+  header .menu li {
+    display: block;
+  }
+  header .menu li a {
+    width: 100%;
+    height: 70px;
+    display: block;
+    padding: 20px 25px;
+  }
+  header .btns {
+    position: fixed;
+    bottom: 0;
+    right: -280px;
+    width: 280px;
+    height: 140px;
+    padding: 0;
+    display: block;
+    padding-left: 15px;
+    transition: all .5s;
+    z-index: 2;
+  }
+  header .btns.active {
+    right: 0;
+  }
+  header .btns a.red,
+  header .btns a.green {
+    margin-left: 0;
+    width: 230px;
+    max-width: 100%;
+    float: left;
+    margin-bottom: 10px;
+  }
+  header .btns a.green {
+    background-color: #49c7d5
+  }
+  header.user-on #item-shopping {
+    display: block;
+  }
+
+  header.user-on .navegacao .container{
+    justify-content: flex-end;
+  }
+
+  header.user-on .navegacao .container .logo{
+    order: 1;
+    width: 95%;
+  }
+
+  header.user-on .navegacao .container .action-perfil{
+    order: 2;
+    margin-right: 30px;
+  }
+
+  header.user-on .navegacao .container nav{
+    order: 3;
+  }
+}

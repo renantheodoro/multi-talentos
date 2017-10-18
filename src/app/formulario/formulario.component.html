@@ -1,0 +1,55 @@
+<form (ngSubmit)="onSubmit()" #Form="ngForm">
+  <div class="col-md-6 center-block">
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" id="nome" required
+      [(ngModel)]="model.nome" name="nome" #nome="ngModel">
+      <div [hidden]="nome.valid || nome.pristine" class="alert alert-danger">
+        Esta informação é requerida!
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" class="form-control" id="email" required email
+      [(ngModel)]="model.email" name="email" #email="ngModel">
+      <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+        <span>Esta informação é requerida!</span>
+        <span>Use um email válido</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="telefone">Telefone</label>
+      <input type="number" class="form-control" id="telefone" required tel
+      [(ngModel)]="model.telefone" name="telefone" #telefone="ngModel">
+      <div [hidden]="telefone.valid || telefone.pristine" class="alert alert-danger">
+        Esta informação é requerida!
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="assunto">Assunto:</label>
+      <!-- <input type="text" class="form-control" id="assunto" name="assunto" required> -->
+      <select class="form-control" id="assunto" required>
+        <option *ngFor="let sobre of assuntos" [value]="sobre">{{sobre}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="mensagem">Mensagem:</label>
+      <!-- <textarea class="form-control" id="mensagem" name="mensagem" rows="8" cols="80" required
+      [(ngModel)]="model.mensagem" #mensagem="ngModel">
+      <div [hidden]="mensagem.valid || mensagem.pristine" class="alert alert-danger">
+        Esta informação é requerida!
+      </div>
+      </textarea> -->
+      <input type="text" class="form-control" id="mensagem" required
+      [(ngModel)]="model.mensagem" name="mensagem" #mensagem="ngModel">
+      <div [hidden]="mensagem.valid || mensagem.pristine" class="alert alert-danger">
+        Esta informação é requerida!
+      </div>
+    </div>
+    <div class="row">
+      <div class="flex-row">
+        <button type="submit" class="btn-action green" [disabled]="!Forms.form.valid">ENVIAR</button>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,7 @@
+.btnHackathon {
+  display: none;
+}
+
+.btnHackathon.user-on {
+  display: block;
+}

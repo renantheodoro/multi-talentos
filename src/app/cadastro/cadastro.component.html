@@ -1,0 +1,139 @@
+<section id="cadastro" class="formulario">
+  <div class="container">
+    <h2 class="title text-center">CRIAR CONTA</h2>
+    <br>
+    <div class="row">
+      <ul class="tabs clearfix text-center" data-tabgroup="first-tab-group">
+        <li><a href="#tab1" class="active">Participante</a></li>
+        <li><a href="#tab2">Colaborador</a></li>
+      </ul>
+    </div>
+    <section id="first-tab-group" class="tabgroup">
+      <div id="tab1">
+        <div class="row">
+          <form action="">
+            <div class="col-md-6 center-block">
+              <div class="form-group">
+                <label for="exampleNome">Nome:</label>
+                <input type="text" class="form-control" id="exampleNome" name="nome" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleSobrenome">Sobrenome:</label>
+                <input type="text" class="form-control" id="exampleSobrenome" name="sobrenome" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">E-mail:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleTelefone">Telefone:</label>
+                <input type="tel" class="form-control" id="exampleTelefone" name="telefone" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleSenha">Senha</label>
+                <input type="password" class="form-control" id="exampleSenha" name="senha" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Confirmar senha:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="confirmeSenha">
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="assinaturas col-md-10 center-block">
+                <h2 class="text-center">ASSINATURAS</h2>
+                <div class="assinatura">
+                  <span class="tipo-assinatura">Básico</span>
+                  <strong class="valor-assinatura">Free</strong>
+                  <ul>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Participe <b>Hackathons Públicos</b></li>
+                    <li><i class="fa fa-times" aria-hidden="true"></i> Participe <b>Hackathons Privados</b></li>
+                    <li><i class="fa fa-times" aria-hidden="true"></i> Tenha seu <b>Perfil público</b></li>
+                    <li><i class="fa fa-times" aria-hidden="true"></i> <b>GoldCoins para descontos em cursos</b></li>
+                  </ul>
+                </div>
+                <div class="assinatura active">
+                  <span class="tipo-assinatura">Premium</span>
+                  <strong class="valor-assinatura">R$ 29,90</strong>
+                  <ul>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Participe <b>Hackathons Públicos</b></li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Participe <b>Hackathons Privados</b></li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Tenha seu <b>Perfil público</b></li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> <b>GoldCoins para descontos em cursos</b></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="flex-row">
+                <a [routerLink]="['/user']" class="btn-action green">CRIAR CONTA</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="tab2">
+        <div class="row">
+          <form action="">
+            <div class="col-md-6 center-block">
+              <div class="form-group">
+                <label for="exampleNome">Nome da empresa:</label>
+                <input type="text" class="form-control" id="exampleNome" name="nome" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">E-mail:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleTelefone">Telefone:</label>
+                <input type="tel" class="form-control" id="exampleTelefone" name="telefone" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleSenha">Senha</label>
+                <input type="password" class="form-control" id="exampleSenha" name="senha" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Confirmar senha:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="confirmeSenha">
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="assinaturas col-md-10 center-block">
+                <h2 class="text-center">ASSINATURAS</h2>
+                <div class="assinatura">
+                  <span class="tipo-assinatura">Básico</span>
+                  <strong class="valor-assinatura">Free</strong>
+                  <ul>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Crie <b>Hackathons Públicos</b></li>
+                    <li><i class="fa fa-times" aria-hidden="true"></i> Crie <b>Hackathons Privados</b></li>
+                    <li><i class="fa fa-times" aria-hidden="true"></i> Visualize <b>ranking de usuários</b></li>
+                    <li><i class="fa fa-times" aria-hidden="true"></i> <b>Disponibilize GoldCoins para cursos</b></li>
+                  </ul>
+                </div>
+                <div class="assinatura active">
+                  <span class="tipo-assinatura">Premium</span>
+                  <strong class="valor-assinatura">R$ 29,90</strong>
+                  <ul>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Crie <b>Hackathons Públicos</b></li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Crie <b>Hackathons Privados</b></li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Visualize <b>ranking de usuários</b></li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> <b>Disponibilize GoldCoins para cursos</b></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="flex-row">
+                <a [routerLink]="['/company']" class="btn-action green">CRIAR CONTA</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</section>

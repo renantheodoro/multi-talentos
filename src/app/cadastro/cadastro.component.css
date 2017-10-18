@@ -1,0 +1,134 @@
+.tabs {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs li{
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  width: 45%;
+}
+.tabs a{
+  color: #4a4a4a;
+  display: block;
+  padding: 15px 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.tabs li a.active,
+.tabs li a:hover{
+  background-color: rgba(53, 193, 208, 0.9);
+  color: #fff;
+}
+
+.assinaturas {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.assinaturas .assinatura {
+  box-shadow:2px 3px 11px -2px #ccc;
+  transition: all 0.3s linear;
+  background-color: #fff;
+  margin-bottom: 20px;
+  width: 48%;
+}
+
+.assinaturas h2{
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.assinaturas .tipo-assinatura {
+  display: block;
+  text-align: center;
+  background-color: #eee;
+  color: #4a4a4a;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.assinaturas .assinatura:hover,
+.assinaturas .assinatura.active,
+.assinaturas .assinatura:focus {
+  transition: all 0.3s linear;
+  transform: scale(1.08);
+  position: relative;
+  z-index: 22;
+  cursor: pointer;
+}
+
+.assinaturas .assinatura.active {
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.assinaturas .assinatura.active:after {
+  content: "\F00C";
+  font-size: inherit;
+  font: normal normal normal 14px/1 FontAwesome;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.assinaturas .assinatura:hover .tipo-assinatura,
+.assinaturas .assinatura.active .tipo-assinatura,
+.assinaturas .assinatura:focus .tipo-assinatura {
+  color: #fff;
+  background-color: rgba(53, 193, 208, 0.9)
+}
+
+.assinaturas .valor-assinatura {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.assinaturas ul {
+  margin-top: 20px;
+}
+
+.assinaturas li {
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 20, 80, 0.1);
+  margin-bottom: 10px;
+  padding: 0 18px 5px;
+  font-size: 16px;
+}
+
+.assinaturas li .fa-check {
+  color: rgba(53, 193, 208, 0.9)
+}
+
+.assinaturas li .fa-times {
+  color: #e74957
+}
+
+.assinaturas li:last-child {
+  border-bottom: 0;
+}
+
+@media(max-width: 767px) {
+  .assinaturas {
+    display: block;
+  }
+  .assinaturas .assinatura {
+    margin: 0 auto 50px
+  }
+}

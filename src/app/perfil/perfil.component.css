@@ -1,0 +1,90 @@
+.perfil .hp {
+  background-color: rgba(53, 193, 208, 0.9);
+  position: absolute;
+  top: 22px;
+  left: -20px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 20px;
+}
+
+.perfil .hp .fa-bolt{
+  color: #ffb401;
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.perfil .conquistas {
+  display: block;
+  float: left;
+  margin-top: 20px;
+  margin-right: -30px;
+}
+
+.perfil .conquistas span{
+  font-size: 18px;
+  margin-right: 30px;
+  display: block;
+  float: left;
+}
+
+.perfil .conquistas i{
+  font-size: 22px;
+}
+
+.perfil .conquistas .ouro{
+  color: #ffb401;
+}
+.perfil .conquistas .prata{
+  color: #c6c6c6;
+}
+.perfil .conquistas .bronze{
+  color: #eda75a;
+}
+
+.perfil .coins span {
+  padding: 10px 10px;
+  border-radius: 4px;
+  margin-left: 0;
+  transition: all 1s;
+}
+
+.perfil .btn-hover {
+  cursor: pointer;
+}
+
+.perfil .btn-hover:hover {
+  background-color: #e5e5e5
+}
+
+#lista-gold_coins li {
+  width: 100%;
+  padding: 15px;
+}
+
+#lista-gold_coins li, .totalCoins {
+  font-size: 18px;
+}
+
+#lista-gold_coins li img, .totalCoins img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+#lista-gold_coins li span, .totalCoins span {
+  font-family: 'Tahoma';
+  font-weight: 500;
+}
+
+.totalCoins {
+  margin-top: -25px
+}
+
+@media screen and (max-width: 1000px){
+  .perfil figure {
+    max-width: 368px;
+    margin: 0 auto 40px;
+  }
+}

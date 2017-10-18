@@ -1,0 +1,58 @@
+<header>
+  <div class="navegacao">
+    <div class="container">
+      <a [routerLink]="['/']" class="logo">
+        <img src="../../assets/img/logo.png" alt="">
+      </a>
+
+      <nav>
+        <a href="javascript:void(0)" id="startMenu" class="fa fa-bars"></a>
+        <ul class="menu">
+          <li><a [routerLink]="['/']">Home</a></li>
+          <li><a [routerLink]="['/hackathons']">Hackathons</a></li>
+          <li><a id="item-shopping" [routerLink]="['/shopping']">Shopping</a></li>
+          <li><a [routerLink]="['/blog']">Blog</a></li>
+          <li><a [routerLink]="['/contato']">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="btns">
+        <a [routerLink]="['/cadastro']" class="btn-action red">CRIAR CONTA</a>
+        <a [routerLink]="['/login']" class="btn-action green">ENTRAR</a>
+      </div>
+
+      <div id="header-overlay"></div>
+
+      <a class="action-perfil">
+        <div class="row info-user">
+          <div class="flex-row">
+            <figure class="user-img">
+              <img src="../../assets/img/user.jpg" alt="" />
+            </figure>
+            <figure class="faculdade-img">
+              <img src="../../assets/img/logo-faculdade.jpg" alt="" />
+            </figure>
+          </div>
+          <ul class="box-logout text-right">
+            <li class="row flex-right">
+              <a [routerLink]="['/user']" class="flex-row user-link">
+                Perfil
+                <i class="fa fa-cog pull-left"></i>
+              </a>
+              <a [routerLink]="['/company']" class="flex-row faculdade-link">
+                Perfil
+                <i class="fa fa-cog pull-left"></i>
+              </a>
+            </li>
+            <li class="row flex-right">
+              <a id="btn-logout" [routerLink]="['/login']" class="flex-row">
+                Sair
+                <i class="fa fa-sign-out pull-left"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </a>
+    </div>
+  </div>
+</header>
